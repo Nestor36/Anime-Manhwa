@@ -1,9 +1,8 @@
 body{
-    background: url("https://e.rpp-noticias.io/xlarge/2020/09/22/514251_999564.png");
-    margin-right: 0;
-    margin-bottom: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: url("./imgs/bckg_2.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    max-width: 100%;
 }
 
 body::after {
@@ -18,8 +17,9 @@ body::after {
 }
 
 header{
-    margin-left: 10%;
-    display: inline-flex;
+    border: red solid 4px;
+    display: flex;
+    justify-content: space-between; /* Centra los elementos en el header */
 }
 
 .lista{
@@ -40,7 +40,7 @@ header li{
 header a{
     color: white;
     text-decoration: none;
-    
+
     background-image: linear-gradient(red, red);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -53,12 +53,10 @@ header a{
     text-decoration-color: red;
 }
 
-
-
 .logo-text{
+    margin-left: 250px;
     display: flex;;
     align-items: center;
-    margin-right: 150px;
 }
 
 .card-image{
@@ -82,4 +80,19 @@ header a{
 .icons{
     justify-content: center;
     color:white;
+}
+
+
+/* [[ SECCIONES ]]  */
+
+.container{
+    display:inline-flex;
+}
+
+.container-first{
+    border: green solid 1px;
+}
+
+.container-second{
+    border: yellow solid 1px;
 }
