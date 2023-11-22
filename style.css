@@ -1,0 +1,85 @@
+body{
+    background: url("https://e.rpp-noticias.io/xlarge/2020/09/22/514251_999564.png");
+    margin-right: 0;
+    margin-bottom: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to right top, #05193700, #004d7a00, #000000bb, rgba(0, 0, 0, 0.412), #000000cc);
+    z-index: -1;
+}
+
+header{
+    margin-left: 10%;
+    display: inline-flex;
+}
+
+.lista{
+    justify-content: center;
+}
+
+header ul{
+    display:flex;
+    color:white;
+    list-style: none;
+}
+
+header li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-right: 70px; /* Ajusta la cantidad de espacio entre elementos */
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    
+    background-image: linear-gradient(red, red);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.lista a:hover, a:focus {
+    background-size: 50% 2px;
+    text-decoration-color: red;
+}
+
+
+
+.logo-text{
+    display: flex;;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.card-image{
+    width: 40px;
+    overflow: hidden;
+}
+
+.card-image img{
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Se ajusta automáticamente la altura para mantener la proporción */
+    display: block; /* Elimina espacio adicional debajo de la imagen */
+}
+
+.logo-text a{
+    margin-left: 5px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
+
+.icons{
+    justify-content: center;
+    color:white;
+}
