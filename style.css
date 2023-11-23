@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
 body{
     background: url("./imgs/bckg_2.jpg");
     background-size: cover;
@@ -86,13 +87,72 @@ header a{
 /* [[ SECCIONES ]]  */
 
 .container{
-    display:inline-flex;
+    display: grid;
+    grid-template-columns: 1fr auto 0; /* Primer columna con ancho automático, segunda columna ocupa el espacio restante, tercera columna con un máximo del 70% */
+
+}
+
+.container-completo-first{
+    display: flex;
+    justify-content: flex-start; /* Alinea hacia la izquierda */
+    height: 90vh; /* Ajusta la altura según tus necesidades */
+    border: white solid 2px;
+    align-items: center;
+
 }
 
 .container-first{
     border: green solid 1px;
+    color:white;
+
+    width: 1000px; /* Ancho específico del div interno */
+    padding: 90px; /* Puedes ajustar el espacio interno según tus necesidades */
+    box-sizing: border-box; /* Asegura que el borde esté incluido en el tamaño total */
+    text-align: left; /* Alinea el texto a la izquierda */
+
+}
+.container-first a{
+    border-radius: 20px;
+    border: white solid 2px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+
+}
+
+.container-first h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+}
+
+.container-first p{
+
+    font-family: 'Source Code Pro', monospace;
+    font-weight:lighter;
+
+
+}
+
+.container-completo-second{
+    border: blue solid 2px;
+
 }
 
 .container-second{
-    border: yellow solid 1px;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    display: flex;
+
+    width: 300px;
+
+}
+.container-second img{
+    margin-bottom: 50px;
+    border-radius: 20px;
+    width: 395px;
+
 }
